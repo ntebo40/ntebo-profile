@@ -309,26 +309,43 @@ function carousel() {
 }
 </script>
 <!-- ================================================================ -->
-<!-- ==================  SIGNATURE FOOTER BAR  ================== -->
-<footer style="background:#2a004d;color:white;text-align:center;
-               padding:1rem 0;font-size:0.9rem;margin-top:2rem;">
-  <div style="margin-bottom:0.4rem;">
+<!-- ==================  ROYAL PURPLE SIGNATURE FOOTER  ================== -->
+<footer style="
+  background: linear-gradient(135deg, #2a004d 0%, #5c2a9d 60%, #b088ff 100%);
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+  margin-top: 2rem;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.3);
+">
+  <div style="margin-bottom: 0.6rem; font-weight: 500;">
     <a href="https://orcid.org/0000-0001-8545-1860" target="_blank"
-       style="color:#b088ff;text-decoration:none;margin:0 8px;">
-       ORCID 0000-0001-8545-1860</a> |
-    <a href="https://scholar.google.com/citations?user=46t6Vx4AAAAJ&hl=en"
-       target="_blank" style="color:#b088ff;margin:0 8px;">Google Scholar</a> |
-    <a href="https://www.researchgate.net/profile/Ntebogang-Moroke"
-       target="_blank" style="color:#b088ff;margin:0 8px;">ResearchGate</a>
+       style="color:#fff;text-decoration:none;margin:0 10px;transition:0.3s;">
+       <img src="https://img.icons8.com/ios-filled/20/ffffff/orcid.png" style="vertical-align:middle;margin-right:6px;">ORCID</a>
+    |
+    <a href="https://scholar.google.com/citations?user=46t6Vx4AAAAJ&hl=en" target="_blank"
+       style="color:#fff;margin:0 10px;text-decoration:none;transition:0.3s;">
+       <img src="https://img.icons8.com/ios-filled/20/ffffff/graduation-cap.png" style="vertical-align:middle;margin-right:6px;">Google Scholar</a>
+    |
+    <a href="https://www.researchgate.net/profile/Ntebogang-Moroke" target="_blank"
+       style="color:#fff;margin:0 10px;text-decoration:none;transition:0.3s;">
+       <img src="https://img.icons8.com/ios-filled/20/ffffff/researchgate.png" style="vertical-align:middle;margin-right:6px;">ResearchGate</a>
   </div>
-  <div id="citations" style="margin-bottom:0.4rem;">
-    Citations (total): <span id="totalCites">—</span> | h-index: <span id="hIndex">—</span>
+
+  <div id="citations" style="margin-bottom: 0.5rem;">
+    <strong>Citations:</strong> <span id="totalCites">—</span> |
+    <strong>h-index:</strong> <span id="hIndex">—</span>
   </div>
-  <div>© 2025 Prof. Dr. Ntebogang Moroke</div>
+
+  <div style="opacity: 0.9;">
+    © 2025 Prof. Dr. Ntebogang Moroke — School of Tourism Management | NWU
+  </div>
 </footer>
 
 <script>
-// --- OPTIONAL AUTOMATIC UPDATE using OpenAlex ---
+// --- AUTO CITATION UPDATE USING OPENALEX (ORCID safe API) ---
 async function loadCitations() {
   try {
     const resp = await fetch("https://api.openalex.org/works?filter=author.orcid:0000-0001-8545-1860");
@@ -340,7 +357,7 @@ async function loadCitations() {
     document.getElementById("hIndex").textContent = calcHIndex(cites);
   } catch(e){
     document.getElementById("citations").innerHTML =
-      "Citations (total): unavailable | h-index: unavailable";
+      "Citations: unavailable | h-index: unavailable";
   }
 }
 function calcHIndex(arr){
