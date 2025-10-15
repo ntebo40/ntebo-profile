@@ -162,6 +162,30 @@
        alt="QR Code for Prof. Moroke Research Profile">
 </div>
 <!-- ============================================================ -->
+<!-- ==================  ANALYTICS DASHBOARD  ================== -->
+<section style="padding:1.5rem 2rem;">
+  <h3>Profile Insights</h3>
+  <p><b>Live Visitors:</b> 
+    <img src="https://hitwebcounter.com/counter/counter.php?page=13972345&style=0025&nbdigits=5&type=page&initCount=0" 
+         alt="Visitor counter" border="0">
+  </p>
+  <p id="orcid-metrics">Loading ORCID metrics...</p>
+</section>
+
+<script>
+async function loadOrcidMetrics() {
+  const orcid = "0000-0001-8545-1860";
+  const resp = await fetch(`https://pub.orcid.org/v3.0/${orcid}/person`, {
+    headers: { "Accept": "application/json" }
+  });
+  const data = await resp.json();
+  const name = data.name["given-names"].value + " " + data.name["family-name"].value;
+  document.getElementById("orcid-metrics").innerHTML =
+    `ORCID Profile Active for <b>${name}</b> | Last Updated: ${new Date().toLocaleDateString()}`;
+}
+loadOrcidMetrics();
+</script>
+<!-- ============================================================ -->
 
 </body>
 </html>
