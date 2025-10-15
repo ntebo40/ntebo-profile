@@ -309,6 +309,49 @@ function carousel() {
 }
 </script>
 <!-- ================================================================ -->
+<!-- ==================  SIGNATURE FOOTER BAR  ================== -->
+<footer style="background:#2a004d;color:white;text-align:center;
+               padding:1rem 0;font-size:0.9rem;margin-top:2rem;">
+  <div style="margin-bottom:0.4rem;">
+    <a href="https://orcid.org/0000-0001-8545-1860" target="_blank"
+       style="color:#b088ff;text-decoration:none;margin:0 8px;">
+       ORCID 0000-0001-8545-1860</a> |
+    <a href="https://scholar.google.com/citations?user=46t6Vx4AAAAJ&hl=en"
+       target="_blank" style="color:#b088ff;margin:0 8px;">Google Scholar</a> |
+    <a href="https://www.researchgate.net/profile/Ntebogang-Moroke"
+       target="_blank" style="color:#b088ff;margin:0 8px;">ResearchGate</a>
+  </div>
+  <div id="citations" style="margin-bottom:0.4rem;">
+    Citations (total): <span id="totalCites">—</span> | h-index: <span id="hIndex">—</span>
+  </div>
+  <div>© 2025 Prof. Dr. Ntebogang Moroke</div>
+</footer>
+
+<script>
+// --- OPTIONAL AUTOMATIC UPDATE using OpenAlex ---
+async function loadCitations() {
+  try {
+    const resp = await fetch("https://api.openalex.org/works?filter=author.orcid:0000-0001-8545-1860");
+    const data = await resp.json();
+    let total = 0;
+    let cites = data.results.map(r=>r.cited_by_count);
+    cites.forEach(c=> total+=c);
+    document.getElementById("totalCites").textContent = total;
+    document.getElementById("hIndex").textContent = calcHIndex(cites);
+  } catch(e){
+    document.getElementById("citations").innerHTML =
+      "Citations (total): unavailable | h-index: unavailable";
+  }
+}
+function calcHIndex(arr){
+  arr.sort((a,b)=>b-a);
+  let h=0;
+  for(let i=0;i<arr.length;i++){ if(arr[i]>=i+1) h=i+1; else break; }
+  return h;
+}
+loadCitations();
+</script>
+<!-- ============================================================ -->
 
 </body>
 </html>
