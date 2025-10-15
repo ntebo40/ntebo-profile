@@ -49,7 +49,7 @@
 <body>
   <div class="card">
     <header>
-      <h1>Prof Dr Ntebogang D. Moroke</h1>
+      <h1 class="halo-name">Prof. Dr. Ntebogang Moroke</h1>
       <h2>Professor of Statistics | North-West University, South Africa</h2>
       <p>📞 +27 82 591 2655  |  📧 <a href="mailto:Ntebo.Moroke@nwu.ac.za" style="color:#fff;">Ntebo.Moroke@nwu.ac.za</a></p>
     </header>
@@ -150,6 +150,21 @@
   padding:10px;
   border-radius:10px;
   border:4px solid #5c2a9d;
+}
+  /* ===== ROYAL PURPLE HALO ANIMATION FOR NAME ===== */
+.halo-name {
+  position: relative;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #3a166d;
+  text-shadow: 0 0 10px rgba(92,42,157,0.6), 0 0 25px rgba(92,42,157,0.4);
+  animation: pulseHalo 4s linear infinite;
+}
+
+@keyframes pulseHalo {
+  0% { text-shadow: 0 0 5px rgba(92,42,157,0.3), 0 0 10px rgba(92,42,157,0.2); }
+  50% { text-shadow: 0 0 20px rgba(92,42,157,0.8), 0 0 40px rgba(92,42,157,0.5); }
+  100% { text-shadow: 0 0 10px rgba(92,42,157,0.6), 0 0 25px rgba(92,42,157,0.4); }
 }
 </style>
 
