@@ -222,6 +222,35 @@ loadOrcidMetrics();
   to   { text-shadow: 0 0 16px rgba(92,42,157,0.9), 0 0 32px rgba(92,42,157,0.5); }
 }
 @keyframes fade {from{opacity:.4;} to{opacity:1;}}
+  /* ===== ROTATING ROYAL PURPLE HALO FOR NAME ===== */
+.halo-name {
+  position: relative;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #3a166d;
+  text-shadow: 0 0 10px rgba(92,42,157,0.6),
+               0 0 25px rgba(92,42,157,0.4);
+}
+
+.halo-name::before {
+  content: "";
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  width: 160%; height: 160%;
+  border-radius: 50%;
+  background: radial-gradient(circle,
+    rgba(92,42,157,0.25) 0%,
+    rgba(92,42,157,0.05) 70%,
+    transparent 100%);
+  animation: rotateHalo 10s linear infinite;
+  z-index: -1;
+}
+
+@keyframes rotateHalo {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to   { transform: translate(-50%, -50%) rotate(360deg); }
+}
 </style>
 
 <script>
