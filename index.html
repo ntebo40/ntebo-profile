@@ -196,7 +196,16 @@ loadOrcidMetrics();
 
 <style>
 #orcid-carousel .slide {animation: fade 1s; color:#333;}
-#orcid-carousel h4 {color:#5c2a9d;}
+#orcid-carousel h4 {
+  color: #5c2a9d;
+  text-shadow: 0 0 8px rgba(92,42,157,0.6),
+               0 0 16px rgba(92,42,157,0.3);
+  animation: glow 3s ease-in-out infinite alternate;
+}
+@keyframes glow {
+  from { text-shadow: 0 0 8px rgba(92,42,157,0.6), 0 0 16px rgba(92,42,157,0.3); }
+  to   { text-shadow: 0 0 16px rgba(92,42,157,0.9), 0 0 32px rgba(92,42,157,0.5); }
+}
 @keyframes fade {from{opacity:.4;} to{opacity:1;}}
 </style>
 
