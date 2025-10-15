@@ -186,6 +186,47 @@ async function loadOrcidMetrics() {
 loadOrcidMetrics();
 </script>
 <!-- ============================================================ -->
+<!-- ==================  RESEARCH HIGHLIGHTS CAROUSEL  ================== -->
+<section style="padding:2rem; text-align:center;">
+  <h3>Research Highlights</h3>
+  <div id="carousel" style="position:relative; max-width:700px; margin:auto;">
+    <div class="slide" style="display:block;">
+      <h4>Exploratory Factor Analysis to Investigate Inter-Relationships Among Serious Crime in South Africa</h4>
+      <p>Applied multivariate statistical methods to identify crime hotspots and relationships between serious crime categories.</p>
+      <a href="https://scholar.google.com/citations?user=46t6Vx4AAAAJ&hl=en" target="_blank">Read more on Google Scholar</a>
+    </div>
+    <div class="slide" style="display:none;">
+      <h4>A Deep Learning Forecasting of Downside Risk: Application of a Combined ESRNN-VAE</h4>
+      <p>Developed a hybrid deep learning framework to forecast downside financial risk using advanced neural architectures.</p>
+      <a href="https://www.researchgate.net/profile/Ntebogang-Moroke" target="_blank">View on ResearchGate</a>
+    </div>
+    <div class="slide" style="display:none;">
+      <h4>Climate-Stress Dynamics in Educational Ecosystems</h4>
+      <p>Mixed-methods study integrating leadership, climate, and stress theories to model teacher stress in South African schools.</p>
+      <a href="https://orcid.org/0000-0001-8545-1860" target="_blank">See ORCID Record</a>
+    </div>
+  </div>
+</section>
+
+<style>
+#carousel .slide {animation: fade 1s; color:#333;}
+#carousel h4 {color:#5c2a9d;}
+@keyframes fade {from{opacity:.4;} to{opacity:1;}}
+</style>
+
+<script>
+let index = 0;
+carousel();
+function carousel() {
+  const slides = document.getElementsByClassName("slide");
+  for (let i = 0; i < slides.length; i++) slides[i].style.display = "none";
+  index++;
+  if (index > slides.length) index = 1;
+  slides[index - 1].style.display = "block";
+  setTimeout(carousel, 7000); // change every 7 seconds
+}
+</script>
+<!-- ================================================================ -->
 
 </body>
 </html>
