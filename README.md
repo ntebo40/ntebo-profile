@@ -36,17 +36,22 @@ https://www.linkedin.com/in/ntebogang-dinah-moroke-a67463245/
 
 ---
 
-## Research Code
-
-GitHub Repository  
-https://github.com/ntebo40
-
----
-
 ## Research Archive (DOI)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18925609.svg)](https://doi.org/10.5281/zenodo.18925609)
 
 ---
+## Data Archive and Indexing
+
+This dataset is archived and indexed in major open science repositories.
+
+Zenodo Archive  
+https://doi.org/10.5281/zenodo.18925609
+
+OpenAIRE Research Graph  
+https://explore.openaire.eu/search/result?pid=10.5281%2Fzenodo.18925609
+
+GitHub Repository  
+https://github.com/ntebo40
 
 ## Research Code and Data
 
@@ -62,17 +67,6 @@ https://doi.org/10.5281/zenodo.17363365
 
 CRISPR-DEO: Decision-Aware Economic Dispatch Optimization via Sparse Gradient Editing for Power System Forecasting  
 IEEE Access  
-https://doi.org/10.1109/ACCESS.2026.3667829
-
----
-
-## Publications
-
-Latest publications available on ORCID:
-
-https://orcid.org/0000-0001-8545-1860
-CRISPR-DEO: Decision-Aware Economic Dispatch Optimization
-IEEE Access
 https://doi.org/10.1109/ACCESS.2026.3667829
 
 ---
