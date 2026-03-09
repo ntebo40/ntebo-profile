@@ -49,22 +49,6 @@ Zenodo Archive
 https://zenodo.org
 
 ---
-
-## Quick Access
-
-Scan the QR code to access my research hub.
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17363365.svg)](https://doi.org/10.5281/zenodo.17363365)
----
-# Prof. Dr. Ntebogang Dinah Moroke
-Professor of Statistics  
-Faculty of Economic and Management Sciences  
-North-West University  
-
-Email: Ntebo.Moroke@nwu.ac.za  
-Tel: +27 (0)18 389 2515  
-
----
-
 ## Academic Profiles
 
 ORCID  
