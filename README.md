@@ -44,27 +44,7 @@ https://github.com/ntebo40
 ---
 
 ## Research Archive (DOI)
-
-Zenodo Archive  
-https://zenodo.org
-
----
-## Academic Profiles
-
-ORCID  
-https://orcid.org/0000-0001-8545-1860
-
-Google Scholar  
-https://scholar.google.co.za/citations?user=46t6Vx4AAAAJ
-
-ResearchGate  
-https://www.researchgate.net/profile/Ntebogang-Moroke
-
-Semantic Scholar  
-https://www.semanticscholar.org/author/Ntebogang-D-Moroke/101312019
-
-LinkedIn  
-https://www.linkedin.com/in/ntebogang-dinah-moroke-a67463245/
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18925609.svg)](https://doi.org/10.5281/zenodo.18925609)
 
 ---
 
@@ -85,13 +65,6 @@ IEEE Access
 https://doi.org/10.1109/ACCESS.2026.3667829
 
 ---
-
-## Quick Access
-
-Scan the QR code below to open my research profile.
-research-qr.gif
-<img width="696" height="696" alt="qr-code(2)" src="https://github.com/user-attachments/assets/3172ad8d-8cb2-4072-b85d-ead67edb1f7f" />
-<img src="research-qr.gif" width="180">
 
 ## Publications
 
@@ -117,3 +90,11 @@ https://doi.org/10.5281/zenodo.18925609
 
 GitHub Research Hub  
 https://github.com/ntebo40
+
+
+## Quick Access
+
+Scan the QR code below to open my research profile.
+research-qr.gif
+<img width="180" height="696" alt="qr-code(2)" src="https://github.com/user-attachments/assets/3172ad8d-8cb2-4072-b85d-ead67edb1f7f" />
+<img src="research-qr.gif" width="180">
