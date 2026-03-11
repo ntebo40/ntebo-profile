@@ -69,6 +69,7 @@ CRISPR-DEO: Decision-Aware Economic Dispatch Optimization via Sparse Gradient Ed
 IEEE Access  
 https://doi.org/10.1109/ACCESS.2026.3667829
 
+[![DOI](https://img.shields.io/badge/DOI-10.3934%2Fenergy.2026014-blue)](https://doi.org/10.3934/energy.2026014)
 ---
 
 ## Research Profiles
